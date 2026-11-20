@@ -1,0 +1,147 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.allbinary.business</groupId>
+    <artifactId>BlisketJavaLibraryPGDScript</artifactId>
+    <packaging>pom</packaging>
+    <!-- AllBinary Platform Version Start -->
+    <version>1.0.0-SNAPSHOT</version>
+    <!-- AllBinary Platform Version End -->
+
+    <name>BlisketJavaLibraryPGDScript</name>
+    <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+    
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    
+    <modules>
+
+        <!--
+        <module>../../j2me/AllBinaryJ2MELibraryGDScriptP</module>
+        -->
+        <!--
+        <module>../data/DataJavaLibraryGDScriptM</module>
+        -->
+
+        <module>../licensing/TestServiceClientInfoJavaLibraryGDScriptM</module>        
+
+        <module>../data/DataTableInterfacesGDScriptM</module>
+        
+        <module>../QueueJavaLibraryGDScriptM</module>
+        
+        <!--
+        <module>../TokenizerJavaLibraryGDScriptM</module>
+        -->
+
+        <module>../logging/LogConfigTypeFreeblisketJavaLibraryGDScriptM</module>
+
+        <module>../JavaUtilLibraryGDScriptM</module>
+        <module>../NullInitInfoJavaLibraryGDScriptM</module>        
+        <module>../InitInfoJavaLibraryGDScriptM</module>
+        <module>../PreLoaderHttpJavaLibraryGDScriptM</module>
+        
+        <module>../TagsBaseJavaLibraryGDScriptM</module>
+        <module>../CustomLoaderJavaLibraryGDScriptM</module>
+        
+        <!--
+        <module>../logic/data/file/FileJ2SEJavaLibraryGDScriptM</module>
+        <module>../logic/data/file/FileJavaLibraryGDScriptM</module>
+        -->
+
+        <module>../data/SQLAllBinaryJavaLibraryGDScriptM</module>
+
+        <!--
+        <module>../licensing/FileLicenseInitInfoJavaLibraryGDScriptM</module>
+        -->
+
+        <module>../DocumentObjectModelJavaLibraryGDScriptM</module>
+
+        <module>../VisualStyleJavaLibraryGDScriptM</module>
+
+        <module>../ConfigurationJavaLibraryGDScriptM</module>
+
+        <module>../VisualTransformBaseJavaLibraryGDScriptM</module>
+
+        <module>../CategoryBaseJavaLibraryGDScriptM</module>
+        <module>../CategoryJavaLibraryGDScriptM</module>
+
+        <module>../UserJavaLibraryGDScriptM</module>
+
+        <module>../PaymentGatewayBaseJavaLibraryGDScriptM</module>
+
+        <module>../data/vo/EntitiesBlisketVOJavaLibraryGDScriptM</module>
+        <module>../PaymentGatewayJavaLibraryGDScriptM</module>
+        <module>../data/vo/EntitiesOrderHistoryVOJavaLibraryGDScriptM</module>
+        <module>../data/vo/EntityPaymentGatewayVOJavaLibraryGDScriptM</module>
+        <module>../data/vo/EntityStoreFrontVOJavaLibraryGDScriptM</module>
+
+        <module>../data/EntitiesBlisketBaseInterfacesJavaLibraryGDScriptM</module>
+        <module>../data/EntitiesBlisketBaseJavaLibraryGDScriptM</module>
+        
+        <module>../data/EntitiesAdvertisementBaseJavaLibraryGDScriptM</module>
+        <module>../data/EntityOrderHistoryJavaLibraryGDScriptM</module>
+        <module>../data/EntityPaymentGatewayJavaLibraryGDScriptM</module>
+        <module>../data/EntityVisualTransformJavaLibraryGDScriptM</module>
+        <module>../data/EntityUserJavaLibraryGDScriptM</module>
+        <module>../data/EntityWorkflowJavaLibraryGDScriptM</module>
+
+        <module>../SMTPConfigurationJavaLibraryGDScriptM</module>
+        <module>../SMTPBaseJavaLibraryGDScriptM</module>
+
+        <module>../VisualTransformJavaLibraryGDScriptM</module>
+
+        <module>../../replace_these_stub_projects/allbinary_src/YourRuntimeEnvironmentJavaLibraryGDScriptM</module>
+        <module>../GatewayJavaLibraryGDScriptM</module>
+        
+        <module>../WorkflowBaseJavaLibraryGDScriptM</module>
+        <module>../WorkflowJavaLibraryGDScriptM</module>
+
+        <module>../IdGeneratorUsingFilesJavaLibraryGDScriptM</module>
+        <module>../BlisketPreVOJavaLibraryGDScriptM</module>
+
+        <!-- 
+        EntitiesOrderHistoryVOJavaLibrary
+        UserJavaLibrary
+        -->
+        
+        <module>../BlisketVOJavaLibraryGDScriptM</module>
+
+        <module>../UserCommerceJavaLibraryGDScriptM</module>
+
+        <module>../CustomizerValidatorsJavaLibraryGDScriptM</module>
+
+        <!-- 
+        AllBinaryCacheForShiftOneJavaLibrary
+        AllBinaryJSECacheJavaLibrary
+        ColorJavaLibrary
+        ImageJavaLibrary
+        -->
+        
+        <module>../logic/data/file/FileMediaJ2SEJavaLibraryGDScriptM</module>
+        <module>../BlisketBaseJavaLibraryGDScriptM</module>
+
+        <module>../logging/LoggingGAEAllGDScriptM</module>
+        <module>../BlisketJavaLibraryGDScriptM</module>
+        
+    </modules>
+
+</project>
+

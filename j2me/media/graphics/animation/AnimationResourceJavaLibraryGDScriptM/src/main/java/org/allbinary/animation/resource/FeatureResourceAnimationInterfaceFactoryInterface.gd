@@ -1,0 +1,12 @@
+# Generated Code Do Not Modify
+# package org.allbinary.animation.resource
+class_name FeatureResourceAnimationInterfaceFactoryInterface
+extends JObject
+
+const jinterfaces_FeatureResourceAnimationInterfaceFactoryInterface = " ResourceAnimationInterfaceFactoryInterface RectangleResourceFactoryInterface GameFeatureControlledInterface "
+const jclassname_FeatureResourceAnimationInterfaceFactoryInterface = "org.allbinary.animation.resource.FeatureResourceAnimationInterfaceFactoryInterface"
+
+func jinit_FeatureResourceAnimationInterfaceFactoryInterface_0():
+    return self
+
+

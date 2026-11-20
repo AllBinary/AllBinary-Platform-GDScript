@@ -1,0 +1,142 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.allbinary</groupId>
+  <artifactId>CombatGameJavaLibraryPOMGDScript</artifactId>
+  <packaging>pom</packaging>
+  <!-- AllBinary Platform Version Start -->
+  <version>1.0.0-SNAPSHOT</version>
+  <!-- AllBinary Platform Version End -->
+
+  <name>CombatGameJavaLibraryPOMGDScript</name>
+  <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+
+    <properties>
+        <buildLabel>${project.version}</buildLabel>
+        <assemblyPluginVersion>2.2-beta-1</assemblyPluginVersion>
+    </properties>
+
+    <modules>
+
+        <!--
+
+        -->
+
+        <module>../../games/TickableJavaLibraryGDScriptM</module>
+
+        <module>../../games/CommonHeadsUpDisplayLibraryGDScriptM</module>
+
+        <module>../../../physics/MovementJavaLibraryGDScriptM</module>
+        <!--        -->
+        <module>../../games/PartsJavaLibraryGDScriptM</module>
+        <module>../../games/PickupGameJavaLibraryGDScriptM</module>
+
+        <module>../../../allbinary_src/licensing/HardCodedLicenseInitInfoJavaLibraryGDScriptM</module>
+        <module>../../../allbinary_src/licensing/FileLicenseInitInfoJavaLibraryGDScriptM</module>
+        <module>../../../allbinary_src/licensing/ClientInfoLicensingJavaLibraryGDScriptM</module>
+
+        <module>../../games/licensing/PartnerJ2MEJavaLibraryGDScriptM</module>
+        <!--<module>../../games/licensing/PartnerHTMLJavaLibraryGDScriptM</module>-->
+        <!--<module>../../games/licensing/PartnerAndroidJavaLibraryGDScriptM</module>-->
+        <module>../../games/licensing/NoGameLicensingJavaLibraryGDScriptM</module>
+        <module>../../games/licensing/GameLicensingOnlyDemoJavaLibraryGDScriptM</module>
+        <!--<module>../../games/licensing/GameLicensingOnlyNormalJavaLibraryGDScriptM</module>-->
+        <module>../../games/licensing/GameLicensingBaseJavaLibraryGDScriptM</module>
+
+        <!--
+        <module>../../games/GameScoresBaseLibraryGDScriptM</module>
+        <module>../../games/GameScoresBaseHTMLLibraryGDScriptM</module>
+        <module>../../games/GameScoresBaseJ2MELibraryGDScriptM</module>
+        -->
+        <module>../../games/GameScoresLocalJavaLibraryGDScriptM</module>
+        <!--<module>../../games/GameScoresRemoteAndLocalJavaLibraryGDScriptM</module>-->
+
+        <module>../../../store/ThirdPartyStoreJavaLibraryGDScriptM</module>
+        <module>../../../store/NoThirdPartyStoreJavaLibraryGDScriptM</module>
+
+        <module>../../media/graphics/layer/CollisionLayerJavaLibraryGDScriptM</module>
+        <module>../../games/CollisionLibraryGDScriptM</module>
+
+        <module>../../games/multiplayer/AllBinaryGameClientBaseNullJavaLibraryGDScriptM</module>
+
+        <module>../../games/PickupLayerJavaLibraryGDScriptM</module>
+
+        <module>../../games/DamageGameJavaLibraryGDScriptM</module>
+        <module>../../games/DropJavaLibraryGDScriptM</module>
+        <module>../../games/WeaponLayerJavaLibraryGDScriptM</module>
+
+        <module>../../games/CombatGameJavaLibraryGDScriptM</module>
+        <module>../../games/LifeJavaLibraryGDScriptM</module>
+
+        <module>../../games/CommonHeadsUpDisplayCombatGameLibraryGDScriptM</module>
+        <module>../../games/LifeOrDeathDataJavaLibraryGDScriptM</module>
+
+        <module>../../games/BasicWeaponPartsJavaLibraryGDScriptM</module>
+        <module>../../games/weapon/WeaponPropertiesJavaLibraryGDScriptM</module>
+
+        <module>../../games/weapon/WeaponMineJavaLibraryGDScriptM</module>
+
+        <!--
+        <module>../../media/graphics/effects/fireworks/FireworksJavaLibraryGDScriptM</module>
+        -->
+
+        <module>../../media/graphics/geography/map/TerrainEventJavaLibraryGDScriptM</module>
+
+<!--
+        <module>../../media/graphics/geography/map/BasicPlatformGeographicMapJavaLibraryGDScriptM</module>
+        -->
+
+        <!--
+        <module>../../media/graphics/geography/map/RaceTrackGDScriptP</module>
+        -->
+
+        <!--
+        XmlRpcJavaLibrary
+        RemoteXmlRpcJavaLibrary
+
+        Since POMs are built before the other libs is it best to handle this differently
+        ../../
+        <module>../../../../workgdscript/j2me/games/strategy/rts/RTSGameJavaLibraryGDScriptP</module>
+        -->
+
+        <module>../../media/graphics/OtherGraphicsMediaLibraryGDScriptP</module>
+
+        <module>../../input/NoTouchButtonResourceAnimationJavaLibraryGDScriptM</module>
+        <module>../../input/TouchButtonResourceAnimationJavaLibraryGDScriptM</module>
+        <module>../../input/TouchButtonResourceOpenGLESAnimationJavaLibraryGDScriptM</module>
+
+        <module>../../input/TrackingEventJavaLibraryGDScriptM</module>
+        <module>../../../game/behavior/BehaviorLibraryGDScriptP</module>
+
+        <module>../../media/sound/OtherSoundMediaLibraryGDScriptP</module>
+
+        <module>../../../allbinary_src/licensing/ApplicationConfigurationJavaLibraryGDScriptM</module>
+        <module>../../../allbinary_src/licensing/ApplicationConfigurationNoFSJavaLibraryGDScriptM</module>
+        <!--GDScript has no magnetic field sensor<module>../../input/AllBinaryMagneticFieldSensorJavaLibraryGDScriptM</module>-->
+        <!--<module>../../android/VirtualKeyboardJavaLibraryGDScriptM</module>-->
+
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>
+

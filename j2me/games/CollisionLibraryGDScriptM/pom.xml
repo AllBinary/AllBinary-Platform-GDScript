@@ -1,0 +1,519 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.allbinary</groupId>
+    <artifactId>CollisionLibraryGDScript</artifactId>
+    <packaging>jar</packaging>
+    <!-- AllBinary Platform Version Start -->
+    <version>1.0.0-SNAPSHOT</version>
+    <!-- AllBinary Platform Version End -->
+
+    <name>CollisionLibraryGDScript</name>
+    <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+    <properties>
+        <cygwin.home>G:/cygwin64</cygwin.home>
+        <planned.language>gdscript</planned.language>
+        <planned.compiler>C:/Godot_v4.7.2-stable_mono_win64/Godot_v4.7.2-stable_mono_win64_console.exe</planned.compiler>
+        <planned.compiler.flags></planned.compiler.flags>
+        <planned.runtime.directory>G:/mnt/bc/mydev/workgdscript/j2me/J2SEForGDScriptLibraryGDScriptM/src/main/java</planned.runtime.directory>
+        <planned.fail.on.error>true</planned.fail.on.error>
+    </properties>
+
+
+
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>LoggingJ2MEAllGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>LogJ2MEJavaLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>OpenGLNoneJavaLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>OpenGLNoneOtherJavaLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+
+            <optional>true</optional>
+        </dependency>
+    
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>AllBinaryLayerJavaLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+
+        </dependency>
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>GameJ2MELibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+
+        </dependency>
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>AllBinaryJ2MELibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+
+        </dependency>
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>GroupLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+
+        </dependency>
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>BasicMathLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+
+        </dependency>
+
+        <dependency>
+            <groupId>org.microemu</groupId>
+            <artifactId>microemu-midp-for-polyglotGDScript</artifactId>
+            <version>2.0.4</version>
+            <optional>true</optional>
+        </dependency>
+
+        <!-- GDScript: ABCustomForm of NullCustomUIJavaLibraryGDScript is used by a dependency (an optional dependency of a dependency is not transitive, and a GDScript dependency file that does not compile fails the classes that use it) -->
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>NullCustomUIJavaLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+        <!-- GDScript: ABCustomGaugeItem of NullCustomUIPreJavaLibraryGDScript is used by a dependency (an optional dependency of a dependency is not transitive, and a GDScript dependency file that does not compile fails the classes that use it) -->
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>NullCustomUIPreJavaLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+        <!-- GDScript: AllBinaryMediaManager of NotDeviceSpecificNoMediaMIDP1LibraryGDScript is used by a dependency (an optional dependency of a dependency is not transitive, and a GDScript dependency file that does not compile fails the classes that use it) -->
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>NotDeviceSpecificNoMediaMIDP1LibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+        <!-- GDScript: AndroidUtil of J2MEForJ2MEJavaLibraryGDScript is used by a dependency (an optional dependency of a dependency is not transitive, and a GDScript dependency file that does not compile fails the classes that use it) -->
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>J2MEForJ2MEJavaLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+        <!-- GDScript: BasicHudFactory of GameNotificationJavaLibraryGDScript is used by a dependency (an optional dependency of a dependency is not transitive, and a GDScript dependency file that does not compile fails the classes that use it) -->
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>GameNotificationJavaLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+        <!-- GDScript: BasicMotionGesturesHandler of MotionGestureBaseJavaLibraryGDScript is used by a dependency (an optional dependency of a dependency is not transitive, and a GDScript dependency file that does not compile fails the classes that use it) -->
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>MotionGestureBaseJavaLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+        <!-- GDScript: BasicTouchInputFactory of NoTouchButtonJavaLibraryGDScript is used by a dependency (an optional dependency of a dependency is not transitive, and a GDScript dependency file that does not compile fails the classes that use it) -->
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>NoTouchButtonJavaLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+        <!-- GDScript: CommandForm of FormJMEJavaLibraryGDScript is used by a dependency (an optional dependency of a dependency is not transitive, and a GDScript dependency file that does not compile fails the classes that use it) -->
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>FormJMEJavaLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+        <!-- GDScript: DebugFactory of DebugJavaLibraryGDScript is used by a dependency (an optional dependency of a dependency is not transitive, and a GDScript dependency file that does not compile fails the classes that use it) -->
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>DebugJavaLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+        <!-- GDScript: EndGameInfo of GameLicensingOnlyDemoJavaLibraryGDScript is used by a dependency (an optional dependency of a dependency is not transitive, and a GDScript dependency file that does not compile fails the classes that use it) -->
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>GameLicensingOnlyDemoJavaLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+        <!-- GDScript: FullScreenUtil of FullScreenNoneJavaLibraryGDScript is used by a dependency (an optional dependency of a dependency is not transitive, and a GDScript dependency file that does not compile fails the classes that use it) -->
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>FullScreenNoneJavaLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+        <!-- GDScript: GameAdStateFactory of AdvertisementClientNoneJavaLibraryGDScript is used by a dependency (an optional dependency of a dependency is not transitive, and a GDScript dependency file that does not compile fails the classes that use it) -->
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>AdvertisementClientNoneJavaLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+        <!-- GDScript: GameStatisticsFactory of ApplicationStatisticsJ2MELibraryGDScript is used by a dependency (an optional dependency of a dependency is not transitive, and a GDScript dependency file that does not compile fails the classes that use it) -->
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>ApplicationStatisticsJ2MELibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+        <!-- GDScript: HardwareFactory of NoHardwareJavaLibraryGDScript is used by a dependency (an optional dependency of a dependency is not transitive, and a GDScript dependency file that does not compile fails the classes that use it) -->
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>NoHardwareJavaLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+        <!-- GDScript: HighScore of GameScoresBaseJ2MELibraryGDScript is used by a dependency (an optional dependency of a dependency is not transitive, and a GDScript dependency file that does not compile fails the classes that use it) -->
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>GameScoresBaseJ2MELibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+        <!-- GDScript: ImageCache of ImageCacheJ2MEJavaLibraryGDScript is used by a dependency (an optional dependency of a dependency is not transitive, and a GDScript dependency file that does not compile fails the classes that use it) -->
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>ImageCacheJ2MEJavaLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+        <!-- GDScript: ItemColorFactory of J2MEWindowingJavaLibraryGDScript is used by a dependency (an optional dependency of a dependency is not transitive, and a GDScript dependency file that does not compile fails the classes that use it) -->
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>J2MEWindowingJavaLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+        <!-- GDScript: KeyValuePersistance of GameConfigurationJ2MEJavaLibraryGDScript is used by a dependency (an optional dependency of a dependency is not transitive, and a GDScript dependency file that does not compile fails the classes that use it) -->
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>GameConfigurationJ2MEJavaLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+        <!-- GDScript: LockableFeatureFactory of GameLicensingNullJavaLibraryGDScript is used by a dependency (an optional dependency of a dependency is not transitive, and a GDScript dependency file that does not compile fails the classes that use it) -->
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>GameLicensingNullJavaLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+        <!-- GDScript: MIDPUtil of J2MEOnlyJavaLibraryGDScript is used by a dependency (an optional dependency of a dependency is not transitive, and a GDScript dependency file that does not compile fails the classes that use it) -->
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>J2MEOnlyJavaLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+        <!-- GDScript: NoButtonsTouchInputFactory of TouchButtonBaseJavaLibraryGDScript is used by a dependency (an optional dependency of a dependency is not transitive, and a GDScript dependency file that does not compile fails the classes that use it) -->
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>TouchButtonBaseJavaLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+        <!-- GDScript: ThreadPool of ThreadJ2MELibraryGDScript is used by a dependency (an optional dependency of a dependency is not transitive, and a GDScript dependency file that does not compile fails the classes that use it) -->
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>ThreadJ2MELibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+        <!-- GDScript: AllBinarySensorManager of NoSensorJavaLibraryGDScript is used by a dependency (an optional dependency of a dependency is not transitive, and a GDScript dependency file that does not compile fails the classes that use it) -->
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>NoSensorJavaLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+        <!-- GDScript: GDResources of GameResourceNoneJavaLibraryGDScript is used by a dependency (an optional dependency of a dependency is not transitive, and a GDScript dependency file that does not compile fails the classes that use it) -->
+        <dependency>
+            <groupId>org.allbinary.game</groupId>
+            <artifactId>GameResourceNoneJavaLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+        <!-- GDScript: GameEventHandlerUtil of GameInputPCMotionJavaLibraryGDScript is used by a dependency (an optional dependency of a dependency is not transitive, and a GDScript dependency file that does not compile fails the classes that use it) -->
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>GameInputPCMotionJavaLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+        <!-- GDScript: LicenseInitInfoUtil of FileLicenseInitInfoJavaLibraryGDScript is used by a dependency (an optional dependency of a dependency is not transitive, and a GDScript dependency file that does not compile fails the classes that use it) -->
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>FileLicenseInitInfoJavaLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+        <!-- GDScript: MultiPlayerGameFeatureFactory of TempJavaLibraryGDScript is used by a dependency (an optional dependency of a dependency is not transitive, and a GDScript dependency file that does not compile fails the classes that use it) -->
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>TempJavaLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+        <!-- GDScript: OpenGLImageSpecificFactory of OpenGLESBaseJavaLibraryGDScript is used by a dependency (an optional dependency of a dependency is not transitive, and a GDScript dependency file that does not compile fails the classes that use it) -->
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>OpenGLESBaseJavaLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+        <!-- GDScript: OperatingSystemFactory of NoSystemJavaLibraryGDScript is used by a dependency (an optional dependency of a dependency is not transitive, and a GDScript dependency file that does not compile fails the classes that use it) -->
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>NoSystemJavaLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+        <!-- GDScript: PlatformKeyFactory of GameInputPCJavaLibraryGDScript is used by a dependency (an optional dependency of a dependency is not transitive, and a GDScript dependency file that does not compile fails the classes that use it) -->
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>GameInputPCJavaLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+        <!-- GDScript: ProgressCanvasFactory of ProgressJ2MEJavaLibraryGDScript is used by a dependency (an optional dependency of a dependency is not transitive, and a GDScript dependency file that does not compile fails the classes that use it) -->
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>ProgressJ2MEJavaLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+        <!-- GDScript: ResourceUtil of PCResourceLibraryGDScript is used by a dependency (an optional dependency of a dependency is not transitive, and a GDScript dependency file that does not compile fails the classes that use it) -->
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>PCResourceLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+        <!-- GDScript: SWTUtil of NoSWTJavaLibraryGDScript is used by a dependency (an optional dependency of a dependency is not transitive, and a GDScript dependency file that does not compile fails the classes that use it) -->
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>NoSWTJavaLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+        <!-- GDScript: ScreenCaptureFactory of ScreenCaptureNoneJavaLibraryGDScript is used by a dependency (an optional dependency of a dependency is not transitive, and a GDScript dependency file that does not compile fails the classes that use it) -->
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>ScreenCaptureNoneJavaLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+        <!-- GDScript: TouchJ2ME of TouchJ2MENoneJavaLibraryGDScript is used by a dependency (an optional dependency of a dependency is not transitive, and a GDScript dependency file that does not compile fails the classes that use it) -->
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>TouchJ2MENoneJavaLibraryGDScript</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>1.0.0-SNAPSHOT</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+
+    <!-- Planned language build: PlannedLanguagePomBuildUpdater -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>3.8.1</version>
+                <executions>
+                    <execution>
+                        <id>unpack-gdscript-dependencies</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>unpack-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <includeScope>compile</includeScope>
+                            <includeTypes>jar</includeTypes>
+                            <excludeClassifiers>sources</excludeClassifiers>
+                            <includes>META-INF/gdscript/**</includes>
+                            <outputDirectory>${project.build.directory}/gdscript-dependencies</outputDirectory>
+                            <overWriteSnapshots>true</overWriteSnapshots>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.5.0</version>
+                <executions>
+                    <execution>
+                        <id>compile-gdscript-sources</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                        <configuration>
+                            <executable>${cygwin.home}/bin/bash.exe</executable>
+                            <arguments>
+                                <argument>${project.basedir}/build-cygwin.sh</argument>
+                                <argument>${project.basedir}/src/main/java</argument>
+                                <argument>${project.build.outputDirectory}/META-INF/gdscript</argument>
+                                <argument>${project.build.directory}/gdscript-objects</argument>
+                                <argument>${project.build.directory}/gdscript-dependencies/META-INF/gdscript</argument>
+                                <argument>${planned.runtime.directory}</argument>
+                                <argument>${planned.compiler}</argument>
+                                <argument>${planned.compiler.flags}</argument>
+                                <argument>${project.artifactId}</argument>
+                                <argument>${planned.fail.on.error}</argument>
+                            </arguments>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.3.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
+

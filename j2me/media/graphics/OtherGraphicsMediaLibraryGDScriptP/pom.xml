@@ -1,0 +1,87 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.allbinary</groupId>
+    <artifactId>OtherGraphicsMediaLibraryPGDScript</artifactId>
+    <packaging>pom</packaging>
+    <!-- AllBinary Platform Version Start -->
+    <version>1.0.0-SNAPSHOT</version>
+    <!-- AllBinary Platform Version End -->
+
+    <name>OtherGraphicsMediaLibraryPGDScript</name>
+    <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+
+
+    <properties>
+        <buildLabel>${project.version}</buildLabel>
+        <assemblyPluginVersion>2.2-beta-1</assemblyPluginVersion>
+    </properties>
+
+    <modules>
+
+        <!--
+        -->
+        <module>../../graphics/animation/vector/VectorAnimationBaseJavaLibraryGDScriptM</module>
+
+        <module>../../graphics/animation/vector/VectorAnimationJ2MEJavaLibraryGDScriptM</module>
+        <module>../../graphics/animation/vector/VectorAnimationJavaLibraryGDScriptM</module>
+
+        <module>../../graphics/VectorJavaLibraryGDScriptM</module>
+
+        <module>../../graphics/BoundsJavaLibraryGDScriptM</module>
+
+        <module>../../../../graphics/opengl/OpenGLESNullImageJavaLibraryGDScriptM</module>
+        <module>../../../../graphics/opengl/OpenGLESNullImageJ2MEJavaLibraryGDScriptM</module>
+
+        <module>../../graphics/animation/image/AllBinaryImageAnimationJavaLibraryGDScriptM</module>
+        <module>../../graphics/animation/sprite/AllBinarySpriteAnimationJavaLibraryGDScriptM</module>
+
+        <!--
+        ../../
+        <module>../../../../../workgdscript/j2me/media/graphics/animation/sprite/AllBinaryQuarterSpriteAnimationJavaLibraryGDScriptM</module>
+        -->
+        <!--
+        ../../
+        <module>../../../../../workgdscript/j2me/media/graphics/animation/sprite/AllBinaryQuarterSpriteAnimation2JavaLibraryGDScriptM</module>
+        -->
+
+        <module>../../graphics/animation/image/ImageJ2MEJavaLibraryGDScriptM</module>
+        <!--
+        <module>../../graphics/animation/image/ImageHTMLJavaLibraryGDScriptM</module>
+        -->
+        <!--<module>../../graphics/animation/image/ImageJ2SEJavaLibraryGDScriptM</module>-->
+        <!--
+        <module>../../graphics/animation/image/ImageAndroidJavaLibraryGDScriptM</module>
+        -->
+        <!--
+        <module>../../graphics/animation/image/ImageSwtJ2SEJavaLibraryGDScriptM</module>
+        -->
+        
+        <!--
+        ../../
+        <module>../../../../../workgdscript/j2me/media/graphics/layer/AllBinaryTiledLayerJavaLibraryGDScriptM</module>
+        <module>../../graphics/layer/AllBinaryTiledLayerJavaLibraryGDScriptM</module>
+        -->
+
+        <!-- Not used in Platform Libraries -->
+        <module>../../graphics/GraphicsBasicImageJavaLibraryGDScriptM</module>
+        <!--
+        -->
+        <module>../../graphics/animation/image/AllBinaryImageAnimationRotationJavaLibraryGDScriptM</module>
+
+    </modules>
+
+</project>
+

@@ -1,0 +1,192 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.allbinary</groupId>
+  <artifactId>GameJ2MELibraryPOMGDScript</artifactId>
+  <packaging>pom</packaging>
+  <!-- AllBinary Platform Version Start -->
+  <version>1.0.0-SNAPSHOT</version>
+  <!-- AllBinary Platform Version End -->
+
+  <name>GameJ2MELibraryPOMGDScript</name>
+  <url>http://www.allbinary.com/</url>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>AllBinary Snapshots Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>AllBinary Releases Nexus</name>
+            <url>https://nexus-allbinary.rhcloud.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+
+
+
+    <modules>
+
+        <!--
+        NoGyroSensorLibrary
+
+        -->
+        <!--<module>../../android/AndroidUtilJavaLibraryGDScriptM</module>-->
+
+        <module>../../../allbinary_src/security/SimpleCryptLibraryGDScriptM</module>
+        <!--
+        <module>../../../../working_thirdpartygdscript/security/BouncyCastleDESJavaLibraryGDScriptM</module>
+        <module>../../../../working_thirdpartygdscript/communication/XmlRpc/XmlRpcJavaLibraryGDScriptM</module>
+        -->
+        <module>../../../allbinary_src/TokenizerJavaLibraryGDScriptM</module>
+        <module>../../../allbinary_src/security/BasicSecurityJavaLibraryGDScriptM</module>
+        <!--<module>../../../replace_these_stub_projects/security/YourCryptFileJavaLibraryGDScriptM</module>-->
+        <module>../../../replace_these_stub_projects/security/YourSecurityJavaLibraryGDScriptM</module>
+        <module>../../../replace_these_stub_projects/communication/YourXmlRpcJavaLibraryGDScriptM</module>
+        <module>../../../replace_these_stub_projects/allbinary_src/J2MEOnlyJavaLibraryGDScriptM</module>
+        <module>../../../replace_these_stub_projects/allbinary_src/J2MECompatibilityJavaLibraryGDScriptM</module>
+        <module>../../../replace_these_stub_projects/allbinary_src/J2MEJsInteropCompatibilityJavaLibraryGDScriptM</module>
+
+        <module>../../DebugJavaLibraryGDScriptM</module>             
+        <module>../../ResourceLibraryGDScriptM</module>
+        <module>../../ResourceJ2MEJavaLibraryGDScriptM</module>
+        <!--<module>../../AndroidResourceLibraryGDScriptM</module>-->
+        <!--<module>../../../allbinary_src/hardware/AndroidSystemJavaLibraryGDScriptM</module>-->
+
+        <module>../../../game/behavior/ArtificialIntelligenceLibraryGDScriptM</module>
+
+        <module>../../media/graphics/PlatformNullImageJavaLibraryGDScriptM</module>
+        <module>../../media/graphics/ImageCacheBaseJ2MEJavaLibraryGDScriptM</module>
+        <module>../../media/graphics/ImageCacheJ2MEJavaLibraryGDScriptM</module>
+        <module>../../../graphics/opengl/OpenGLJ2MENoneJavaLibraryGDScriptM</module>
+        <module>../../../graphics/opengl/OpenGLNoneJavaLibraryGDScriptM</module>
+        <module>../../../graphics/opengl/OpenGLNoneOtherJavaLibraryGDScriptM</module>
+        <module>../../../graphics/opengl/OpenGLNoneOther2JavaLibraryGDScriptM</module>
+        <module>../../../graphics/opengl/OpenGLESBaseJ2MEJavaLibraryGDScriptM</module>
+
+        <module>../../media/graphics/animation/AnimationLibraryGDScriptM</module>
+        <module>../../media/graphics/animation/RotationAnimationJavaLibraryGDScriptM</module>
+
+        <module>../../games/GameInputLibraryGDScriptM</module>
+
+        <module>../../games/GameScoresBaseJavaLibraryGDScriptM</module>
+        <module>../../games/GameScoresBaseJ2MELibraryGDScriptM</module>
+
+        <module>../../statistics/ApplicationStatisticsHTMLLibraryGDScriptM</module>
+        <!--
+        <module>../../games/GameConfigurationHTMLJavaLibraryGDScriptM</module>
+        -->
+        <module>../../games/GameConfigurationJ2MEJavaLibraryGDScriptM</module>   
+        <module>../../games/GameConfigurationJavaLibraryGDScriptM</module>
+
+        <module>../../games/GameIntermissionLibraryGDScriptM</module>
+
+        <module>../../GroupLibraryGDScriptM</module>
+
+        <module>../../input/NoSensorJavaLibraryGDScriptM</module>
+
+        <module>../../input/AllBinarySensorJavaLibraryGDScriptM</module>
+
+        <module>../../input/platform/me/GameInputMEJavaLibraryGDScriptM</module>
+        <module>../../input/platform/me/GameInputMEKeyOnlyJavaLibraryGDScriptM</module>
+        <module>../../input/platform/me/GameInputMEMotionJavaLibraryGDScriptM</module>
+        <module>../../input/platform/pc/GameInputPCBaseJavaLibraryGDScriptM</module>
+        <module>../../input/platform/pc/GameInputPCJavaLibraryGDScriptM</module>
+        <module>../../input/platform/pc/GameInputPCKeyOnlyJavaLibraryGDScriptM</module>
+        <module>../../input/platform/pc/GameInputPCMotionJavaLibraryGDScriptM</module>
+        <!--GDScript is a game language without SWT (a web language for the desktop libraries)<module>../../input/platform/pc/GameInputSwtJavaLibraryGDScriptM</module>-->
+
+        <module>../../input/AllBinaryGyroSensorJavaLibraryGDScriptM</module>
+        <module>../../input/MotionGestureJavaLibraryGDScriptM</module>
+        
+        <module>../../input/MotionGestureBaseJavaLibraryGDScriptM</module>
+
+        <module>../../games/GameInputPersistanceLibraryGDScriptM</module>
+        <module>../../games/GameInputNoPersistanceLibraryGDScriptM</module>
+        
+        <module>../../lib/VectorThreeDimensionalLibraryGDScriptM</module>
+        <module>../../input/AllBinaryAccelerometerSensorJavaLibraryGDScriptM</module>
+        <module>../../input/NoGyroSensorJavaLibraryGDScriptM</module>
+        <module>../../input/JSEGyroSensorJavaLibraryGDScriptM</module>
+        <!--
+        <module>../../input/android/</module>
+        <module>../../input/platform/android/GameInputAndroidBaseJavaLibraryGDScriptM</module>
+        -->
+
+        <module>../../media/sound/BasicPlayerJavaLibraryGDScriptM</module>
+        <module>../../media/sound/BasicPlayerMIDP2JavaLibraryGDScriptM</module>
+        <module>../../media/sound/NoPlayerJavaLibraryGDScriptM</module>
+        <module>../../media/sound/SoundJ2MELibraryGDScriptM</module>
+
+        <module>../../media/motion/AllBinaryVibrationJavaLibraryGDScriptM</module>
+        <module>../../media/motion/NoVibrateJavaLibraryGDScriptM</module>
+        <!--<module>../../media/motion/VibrateAndroidJavaLibraryGDScriptM</module>-->
+
+        <module>../../media/graphics/NullCustomUIJavaLibraryGDScriptM</module>
+        <module>../../media/graphics/NullCustomUIBaseJavaLibraryGDScriptM</module>
+
+        <module>../../media/graphics/FormValidationJavaLibraryGDScriptM</module>
+        
+        <module>../../media/graphics/FormJavaLibraryGDScriptM</module>
+        <module>../../media/graphics/FormBaseJavaLibraryGDScriptM</module>
+        <!--
+        <module>../../media/graphics/FormJMEJavaLibraryGDScriptM</module>
+        -->
+        <module>../../../j2me/media/graphics/FormJMEJavaLibraryGDScriptM</module>
+
+        <module>../../media/graphics/animation/AnimationResourceJavaLibraryGDScriptM</module>
+        <module>../../media/graphics/animation/TransitionAnimationJavaLibraryGDScriptM</module>
+        <module>../../media/graphics/animation/NoTransitionAnimationJavaLibraryGDScriptM</module>
+        <!--
+        AndroidTransitionAnimationJavaLibraryM
+        -->
+        <module>../../media/graphics/animation/GameAnimationJavaLibraryGDScriptM</module>
+        <module>../../games/GameResourceJavaLibraryGDScriptM</module>
+        <module>../../games/GameSoundsJavaLibraryGDScriptM</module>
+
+        <module>../../input/TouchInputLibraryGDScriptP</module>
+
+        <module>../../media/MediaDataGDScriptM</module>
+        <module>../../media/sound/NotDeviceSpecificNoMediaMIDP1LibraryGDScriptM</module>
+
+        <module>../../../allbinary_src/content/ContentNoneJavaLibraryGDScriptM</module>
+        <!--<module>../../../allbinary_src/content/ContentAndroidJavaLibraryGDScriptM</module>-->
+
+        <module>../../games/GameConfigurationFormJavaLibraryGDScriptM</module>
+
+        <module>../../FullScreenNoneJavaLibraryGDScriptM</module>
+        <!--
+        <module>../../FullScreenJavaLibraryGDScriptM</module>
+        -->
+
+        <module>../../../physics/VelocityLibraryGDScriptM</module>
+
+        <module>../../games/weapon/SoundsBasicWeaponsJavaLibraryGDScriptM</module>
+
+        <module>../../lib/TrigJ2MELibraryGDScriptM</module>
+
+        <module>../../media/graphics/geography/map/LayerPlacementLibraryGDScriptM</module>
+        <module>../../media/graphics/layer/AllBinaryLayerJavaLibraryGDScriptM</module>
+
+        <module>../../ScreenCaptureNoneJavaLibraryGDScriptM</module>
+        
+        <module>../licensing/GameLicensingNullJavaLibraryGDScriptM</module>
+        
+        <module>../../business/advertisement/AllBinaryAdvertisementClientJavaLibraryGDScriptM</module>
+        <module>../../business/advertisement/AdvertisementClientNoneJavaLibraryGDScriptM</module>
+
+        <module>../GameNotificationJavaLibraryGDScriptM</module>
+
+        <module>../../../graphics/opengl/NoSWTJavaLibraryGDScriptM</module>
+        <module>../../../graphics/opengl/SWTWithoutJOGLJavaLibraryGDScriptM</module>
+        <!--GDScript is a game language without SWT (a web language for the desktop libraries)<module>../SWTJavaLibraryGDScriptM</module>-->
+        <module>../GameJ2MELibraryGDScriptM</module>
+        
+        <!--
+        <module>../GameJ2MEOptionalLibraryPOGDScriptM</module>
+        -->
+    
+    </modules>
+
+</project>
+
